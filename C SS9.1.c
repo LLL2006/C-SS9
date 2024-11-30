@@ -24,11 +24,6 @@ int main() {
     printf("Nhap vi tri muon chen (tu 1 den %d): ", n + 1);
     scanf("%d", &index);
 
-    if (index < 1 || index > n + 1) {
-        printf("Vi tri khong hop le!\n");
-        return 1;
-    }
-
     for (int i = n; i >= index; i--) {
         arr[i] = arr[i - 1];
     }
